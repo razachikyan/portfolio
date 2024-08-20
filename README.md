@@ -42,6 +42,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 [**Figma**](https://www.figma.com/design/tAB5FNYt8SXCBGOdcdaAWR/Untitled?node-id=0-1&t=fkKPvsrcMYqcTQHE-0)
+[**Proto Light**](https://lmpixels.com/wp/leven-wp/full-width/)
+[**Proto Dark**](https://lmpixels.com/wp/leven-wp/full-width-dark/)
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 

@@ -1,6 +1,21 @@
-import styles from "./styles.module.css";
+import classNames from "classnames";
 import { IButtonProps } from "./types";
 
-export const Button = ({ onClick }: IButtonProps): JSX.Element => {
-  return <button onClick={onClick} className={styles.Button}></button>;
+import styles from "./styles.module.css";
+
+export const Button = ({
+  onClick,
+  className = "",
+  children,
+  CSS = {},
+}: IButtonProps): JSX.Element => {
+  return (
+    <button
+      style={CSS}
+      onClick={onClick}
+      className={classNames(styles.Button, className)}
+    >
+      {children}
+    </button>
+  );
 };

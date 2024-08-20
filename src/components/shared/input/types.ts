@@ -1,6 +1,6 @@
-export interface IInputProps {
-    type?: string;
-    value: string | number;
+export interface IInputProps<T = string> {
+    value: T;
     onChange: () => void;
     disabled?: boolean;
+    icon?: string;
 }

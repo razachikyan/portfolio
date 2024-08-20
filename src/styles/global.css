@@ -10,7 +10,7 @@ html {
   body {
     min-width: 320px;
     font-weight: 400;
-    font-family: 'Poppins', 'Inter', sans-serif;
+    font-family: "Poppins", "Inter", sans-serif;
 
     img {
       max-width: 100%;
@@ -47,4 +47,14 @@ html {
 
 .hidden {
   display: none !important;
+}
+
+:root[data-theme='dark'] {
+  --primary-color: #FFFFFF;
+  --background-color: #222222;
+}
+
+:root[data-theme='light'] {
+  --primary-color: #222222;
+  --background-color: #FFFFFF;
 }

@@ -1,11 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { HomePage } from "./pages/homepage/page";
+import { ResumePage } from "./pages/resume/page";
+import { ContactsPage } from "./pages/contacts/page";
+import { PortfolioPage } from "./pages/portfolio/page";
 
 import "normalize.css";
 import "./styles/fonts.css";
 import "./styles/global.css";
-import { ThemeProvider } from "./contexts/ThemeContext";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/resume",
+    element: <ResumePage />,
+  },
+  {
+    path: "/contacts",
+    element: <ContactsPage />,
+  },
+  {
+    path: "/portfolio",
+    element: <PortfolioPage />,
+  },
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,7 +36,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
 );

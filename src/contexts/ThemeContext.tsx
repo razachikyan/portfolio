@@ -10,7 +10,9 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState<string>("light"); // Default theme
+  const [theme, setTheme] = useState<string>(
+    localStorage.getItem("theme") ?? "light"
+  );
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

@@ -1,7 +1,7 @@
 import { Button } from "../../../components/shared/button";
 import { useTheme } from "../../../contexts/ThemeContext";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 export const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -12,6 +12,7 @@ export const ThemeToggle: React.FC = () => {
       "data-theme",
       theme === "light" ? "dark" : "light"
     );
+    localStorage.setItem("theme", theme === "light" ? "dark" : "light");
   };
 
   return (

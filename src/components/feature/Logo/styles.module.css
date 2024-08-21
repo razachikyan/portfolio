@@ -1,5 +1,13 @@
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 250%;
+  color: var(--primary-color);
 }

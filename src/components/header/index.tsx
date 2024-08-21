@@ -7,9 +7,13 @@ import styles from "./styles.module.css";
 export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
-      <Container>
+      <Container className={styles.container}>
         <Logo />
-        <Nav items={['About me', 'Resume', 'Portfolio', 'Contact']} />
+        <Nav
+          className={styles.nav}
+          itemClassName={styles.item}
+          items={["About me", "Resume", "Portfolio", "Contact"]}
+        />
         <ThemeToggle />
       </Container>
     </header>

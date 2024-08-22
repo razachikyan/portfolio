@@ -10,6 +10,12 @@
   justify-content: space-between;
 }
 
+.left {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
 .nav {
   width: 500px;
   justify-content: space-between;
@@ -20,6 +26,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 330%;
-  color: var(--primary-color);
+  color: var(--gray__400);
   cursor: pointer;
 }

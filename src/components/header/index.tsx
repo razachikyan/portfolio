@@ -9,12 +9,14 @@ export const Header = (): JSX.Element => {
     <header className={styles.header}>
       <Container className={styles.container}>
         <Logo />
-        <Nav
-          className={styles.nav}
-          itemClassName={styles.item}
-          items={["About me", "Resume", "Portfolio", "Contact"]}
-        />
-        <ThemeToggle />
+        <div className={styles.left}>
+          <Nav
+            className={styles.nav}
+            itemClassName={styles.item}
+            items={["About me", "Resume", "Portfolio", "Contact"]}
+          />
+          <ThemeToggle />
+        </div>
       </Container>
     </header>
   );

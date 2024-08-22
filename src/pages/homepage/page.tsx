@@ -1,7 +1,16 @@
+import { Promo } from "../../components/feature/sections/promo";
+import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
+import { Main } from "../../components/main";
+
 export const HomePage = (): JSX.Element => {
-    return (
-        <div>
-          <h1>Home Page</h1>
-        </div>
-      );
+  return (
+    <>
+      <Header />
+      <Main>
+        <Promo />
+      </Main>
+      <Footer />
+    </>
+  );
 };

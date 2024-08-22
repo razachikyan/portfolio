@@ -11,7 +11,7 @@ html {
     min-width: 320px;
     font-weight: 400;
     font-family: "Poppins", "Inter", sans-serif;
-
+    background-color: var(--background-color);
     img {
       max-width: 100%;
     }
@@ -49,12 +49,23 @@ html {
   display: none !important;
 }
 
-:root[data-theme='dark'] {
-  --primary-color: #FFFFFF;
+:root[data-theme="dark"] {
+  --silver: #aaaaaa;
+  --gray__400: #ffffff;
+  --gray__500: #F5F5F5;
+  --gray__700: #D5D5D5;
+  --gray__750: #FFFFFF;
+  
+  --outline: #007CED;
   --background-color: #222222;
 }
 
-:root[data-theme='light'] {
-  --primary-color: #222222;
-  --background-color: #FFFFFF;
+:root[data-theme="light"] {
+  --silver: #aaaaaa;
+  --gray__400: #222222;
+  --gray__500: #333333;
+  --gray__700: #666666;
+  --gray__750: #666666;
+  --outline: #54CA95;
+  --background-color: #ffffff;
 }

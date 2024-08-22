@@ -1,4 +1,10 @@
-import React, { createContext, useState, ReactNode, useContext } from "react";
+import React, {
+  createContext,
+  useState,
+  ReactNode,
+  useContext,
+  useEffect,
+} from "react";
 
 interface ThemeContextType {
   theme: string;
@@ -13,6 +19,10 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   const [theme, setTheme] = useState<string>(
     localStorage.getItem("theme") ?? "light"
   );
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

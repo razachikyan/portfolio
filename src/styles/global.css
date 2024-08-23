@@ -48,24 +48,47 @@ html {
 .hidden {
   display: none !important;
 }
+.swiper {
+  width: 85%;
+  height: 300px;
+  background: var(--outline);
+  border-radius: 40px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 :root[data-theme="dark"] {
   --silver: #aaaaaa;
   --gray__400: #ffffff;
-  --gray__500: #F5F5F5;
-  --gray__700: #D5D5D5;
-  --gray__750: #FFFFFF;
-  
-  --outline: #007CED;
+  --gray__500: #f5f5f5;
+  --gray__700: #d5d5d5;
+  --gray__750: #ffffff;
+  --outline: #007ced;
   --background-color: #222222;
+  --swiper-theme-color: #54ca95;
+  --gray__200_common: #999999;
+  --gray__300_common: #888888;
+  --gray__400_common: #666666;
 }
 
 :root[data-theme="light"] {
   --silver: #aaaaaa;
+  --gray__200_common: #999999;
+  --gray__300_common: #888888;
+  --gray__400_common: #666666;
   --gray__400: #222222;
   --gray__500: #333333;
   --gray__700: #666666;
   --gray__750: #666666;
-  --outline: #54CA95;
+  --outline: #54ca95;
   --background-color: #ffffff;
+  --swiper-theme-color: #007ced;
 }

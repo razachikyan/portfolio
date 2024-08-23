@@ -8,6 +8,8 @@ import { ContactsPage } from "./pages/contacts/page";
 import { PortfolioPage } from "./pages/portfolio/page";
 
 import "normalize.css";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import "./styles/fonts.css";
 import "./styles/global.css";
 

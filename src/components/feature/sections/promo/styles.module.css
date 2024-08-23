@@ -1,3 +1,7 @@
+.promo {
+  padding-bottom: 130px;
+}
+
 .container {
   padding: 80px 145px;
 }
@@ -12,9 +16,9 @@
 }
 
 .avatar {
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: var(--outline);
 }
 
 .subtitle {
@@ -38,10 +42,12 @@
 .descr {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 175%;
   color: var(--gray__700);
   margin-bottom: 25px;
+  width: 500px;
+  min-height: 80px;
 }
 
 .btnBox {
@@ -54,7 +60,7 @@
   border: 3px solid;
   border-radius: 30px;
   padding: 13px 31px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
@@ -69,5 +75,4 @@
 .contacts {
   border-color: var(--gray__700);
   color: var(--gray__750);
-
 }

@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { Container } from "../../../../components/container";
 import { Image } from "../../../../components/shared/image";
+import { TypeAnimation } from "react-type-animation";
 
 import styles from "./styles.module.css";
 
@@ -18,12 +19,23 @@ export const Promo = (): JSX.Element => {
           <div className={styles.info}>
             <span className={styles.subtitle}>Software Developer</span>
             <h2 className={styles.name}>Razmik Achikyan</h2>
-            <p className={styles.descr}>
+            <TypeAnimation
+              sequence={[
+                `👋 Hi, I'm Razmik, a frontend developer with experience in
+              backend and mobile app development. I specialize in creating
+              seamless web interfaces using React and Next.js. Let's
+              connect! 🤝`,
+              ]}
+              wrapper="p"
+              cursor={true}
+             className={styles.descr}
+            />
+            {/* <p className={styles.descr}>
               👋 Hi, I&apos;m Razmik, a frontend developer with experience in
               backend and mobile app development. I specialize in creating
               seamless web interfaces using React and Next.js. Let&apos;s
               connect! 🤝
-            </p>
+            </p> */}
             <div className={styles.btnBox}>
               <a
                 className={classNames(styles.button, styles.cv)}

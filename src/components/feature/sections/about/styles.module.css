@@ -14,11 +14,12 @@
 .descr {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 175%;
   color: white;
   min-height: 80px;
   max-width: 95%;
+  font-weight: 600;
 }
 
 .slideBox {
@@ -50,20 +51,12 @@
   justify-content: space-between;
 }
 
-.subtitle {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 120%;
-  color: white;
-  margin-bottom: 20px;
-}
-
 .repoList {
   display: flex;
   justify-content: space-between;
   height: 100%;
   gap: 15px;
+  align-items: center;
 }
 
 .repoItem {
@@ -110,7 +103,7 @@
 
 .repoName {
   margin-top: 8px;
-  ont-family: "Poppins";
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
@@ -123,4 +116,33 @@
   margin-top: 15px;
   font-family: 'Poppins';
   color: white;
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.socialName {
+  margin-top: 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: white;
+}
+
+.socialItem {
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color .3s;
+  &:hover {
+    background-color: rgba(255, 255, 255, .5);
+  }
 }

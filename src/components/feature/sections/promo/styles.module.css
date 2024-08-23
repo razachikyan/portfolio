@@ -68,8 +68,30 @@
 }
 
 .cv {
+  position: relative;
   border-color: var(--outline);
   color: var(--gray__400);
+
+  &::before {
+    content: "";
+    inset: 50%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    background-color: var(--outline);
+    border-radius: 30px;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: white;
+  }
+
+  &:hover::before {
+    inset: 0;
+    width: initial;
+    height: initial;
+  }
 }
 
 .contacts {

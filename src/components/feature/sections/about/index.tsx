@@ -2,10 +2,11 @@ import { Container } from "../../../../components/container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import { Image } from "../../../../components/shared/image";
-import { repositories } from "./mock";
+import { repositories, social } from "./mock";
+import classNames from "classnames";
+import { TypeAnimation } from "react-type-animation";
 
 import styles from "./styles.module.css";
-import classNames from "classnames";
 
 export const About = (): JSX.Element => {
   return (
@@ -17,20 +18,41 @@ export const About = (): JSX.Element => {
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
-          pagination={{
-            clickable: true,
-          }}
           modules={[Mousewheel, Pagination]}
         >
           <SwiperSlide>
-            <p className={styles.descr}>
-              Frontend developer experiences in creating user-friendly and
+            <TypeAnimation
+              sequence={[
+                `Frontend developer experiences in creating user-friendly and
               responsive web applications. Specialized in front-end development
               while also contributing to back-end and mobile development.
               Ability to adapt to unfamiliar technologies and tools,
-              demonstrating flexibility in solving a variety of problems.
-            </p>
+              demonstrating flexibility in solving a variety of problems.`,
+              ]}
+              wrapper="p"
+              cursor={true}
+              speed={50}
+              className={styles.descr}
+            />
           </SwiperSlide>
+          <SwiperSlide>
+            <ul className={styles.socialList}>
+              {social.map(({ url, name, image }) => (
+                <li className={styles.socialItem}>
+                  <a href={url}>
+                    <Image
+                      size={180}
+                      src={image}
+                      alt={name}
+                      className={styles.repo}
+                    />
+                  </a>
+                  <span className={styles.socialName}>{name}</span>
+                </li>
+              ))}
+            </ul>
+          </SwiperSlide>
+
           <SwiperSlide>
             <div className={styles.slideBox}>
               <a className={styles.git} href="https://github.com/razachikyan">
@@ -40,14 +62,13 @@ export const About = (): JSX.Element => {
                   size={180}
                   className={styles.github}
                 />
-                <span className={styles.me}>razachikyan</span>
+                <span className={styles.me}>@razachikyan</span>
               </a>
               <div className={styles.repos}>
-                <span className={styles.subtitle}>Repos</span>
                 <ul className={styles.repoList}>
                   {repositories.map(({ url, name, image }) => (
                     <li className={styles.repoItem}>
-                      <a href={url}>
+                      <a rel="noreferrer" target="_blank" href={url}>
                         <Image
                           size={120}
                           src={image}
@@ -59,7 +80,11 @@ export const About = (): JSX.Element => {
                     </li>
                   ))}
                   <li className={classNames(styles.repoItem, styles.lastItem)}>
-                    <a href="https://github.com/razachikyan?tab=repositories">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://github.com/razachikyan?tab=repositories"
+                    >
                       <Image
                         size={120}
                         src="/icons/see-more.svg"
@@ -72,7 +97,6 @@ export const About = (): JSX.Element => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide>Social</SwiperSlide>
         </Swiper>
       </Container>
     </section>

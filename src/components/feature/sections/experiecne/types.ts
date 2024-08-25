@@ -4,4 +4,6 @@ export interface IExperience {
   end: Date | 'Present';
   location: string;
   summary: string;
+  logo: string;
+  link: string
 }

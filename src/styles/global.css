@@ -12,6 +12,7 @@ html {
     font-weight: 400;
     font-family: "Poppins", "Inter", sans-serif;
     background-color: var(--background-color);
+    margin: 0 auto;
     img {
       max-width: 100%;
     }

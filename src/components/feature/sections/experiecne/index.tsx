@@ -1,14 +1,40 @@
-import { Container } from "@/components/container";
+import { Image } from "../../../../components/shared/image";
+import { Container } from "../../../../components/container";
+import { experiences, formatDate } from "./mock";
+import { IExperience } from "./types";
+import { SectionTitle } from "../../sectionTitle";
+
 import styles from "./styles.module.css";
-import { experienceList } from "./mock";
 
 export const Experience = (): JSX.Element => {
   return (
     <section className={styles.experience}>
-      <Container className={styles.container}>
-        {experienceList.map(({ company, end, location, start, summary }) => {
-          return <div></div>;
-        })}
+      <Container>
+        <SectionTitle>Experience</SectionTitle>
+        <div className={styles.box}>
+          {experiences.map(
+            ({ company, end, location, start, summary, logo }: IExperience) => {
+              return (
+                <div className={styles.item}>
+                  <a href="" className={styles.main}>
+                    <Image
+                      size={50}
+                      className={styles.logo}
+                      src={logo}
+                      alt={company}
+                    />
+                    <h4 className={styles.name}>{company}</h4>
+                  </a>
+                  <span className={styles.date}>
+                    {formatDate(start)} - {formatDate(end)}
+                  </span>
+                  <span className={styles.location}>{location}</span>
+                  <p className={styles.descr}>{summary}</p>
+                </div>
+              );
+            }
+          )}
+        </div>
       </Container>
     </section>
   );

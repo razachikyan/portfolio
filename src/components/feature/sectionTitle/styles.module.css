@@ -1,0 +1,9 @@
+.title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 120%;
+    color: var(--gray__500);
+    margin-bottom: 20px;
+}

@@ -7,18 +7,20 @@ import classNames from "classnames";
 import { TypeAnimation } from "react-type-animation";
 
 import styles from "./styles.module.css";
+import { SectionTitle } from "../../sectionTitle";
 
 export const About = (): JSX.Element => {
   return (
     <section className={styles.about}>
       <Container className={styles.container}>
-        <h3 className={styles.title}>About</h3>
+        <SectionTitle>About</SectionTitle>
         <Swiper
           direction={"vertical"}
           slidesPerView={1}
           spaceBetween={30}
           mousewheel={true}
           modules={[Mousewheel, Pagination]}
+          pagination
         >
           <SwiperSlide>
             <TypeAnimation

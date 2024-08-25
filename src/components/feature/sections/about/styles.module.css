@@ -2,15 +2,6 @@
   padding-bottom: 100px;
 }
 
-.title {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 120%;
-  color: var(--gray__500);
-  margin-bottom: 20px;
-}
-
 .descr {
   font-family: "Poppins";
   font-weight: 400;

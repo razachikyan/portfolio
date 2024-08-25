@@ -1,3 +1,3 @@
 import { IEntry } from "../../../../types/shared";
 
-export interface IExperience extends IEntry {}
+export interface IEducation extends IEntry {}

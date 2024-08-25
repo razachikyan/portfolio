@@ -1,0 +1,5 @@
+.box {
+    background-color: var(--outline);
+    border-radius: 40px;
+    padding: 40px;
+}

@@ -4,6 +4,7 @@ import { Experience } from "../../components/feature/sections/experiecne";
 import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
 import { Main } from "../../components/main";
+import { Education } from "../../components/feature/sections/education";
 
 export const HomePage = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ export const HomePage = (): JSX.Element => {
         <Promo />
         <About />
         <Experience />
+        <Education />
       </Main>
       <Footer />
     </>

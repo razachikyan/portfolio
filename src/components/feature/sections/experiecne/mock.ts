@@ -2,7 +2,7 @@ import { IExperience } from "./types";
 
 export const experiences: IExperience[] = [
   {
-    company: "Optimum Partners",
+    title: "Optimum Partners",
     start: new Date(2024, 5),
     end: "Present",
     location: "Yerevan",
@@ -12,7 +12,7 @@ export const experiences: IExperience[] = [
     link: "https://www.optimumpartners.com/",
   },
   {
-    company: "Solicy",
+    title: "Solicy",
     start: new Date(2023, 4),
     end: new Date(2024, 5),
     location: "Yerevan",
@@ -22,7 +22,7 @@ export const experiences: IExperience[] = [
     link: "https://solicy.net/",
   },
   {
-    company: "Megafon",
+    title: "Megafon",
     start: new Date(2022, 4),
     end: new Date(2022, 8),
     location: "Yerevan (Remote)",

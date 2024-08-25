@@ -1,12 +1,9 @@
-import { Image } from "../../../../components/shared/image";
 import { Container } from "../../../../components/container";
-import { experiences, formatDate } from "./mock";
-import { IExperience } from "./types";
+import { experiences } from "./mock";
 import { SectionTitle } from "../../sectionTitle";
+import { GenericList } from "../../gelericList";
 
 import styles from "./styles.module.css";
-import { Box } from "../../box";
-import { GenericList } from "../../gelericList";
 
 export const Experience = (): JSX.Element => {
   return (

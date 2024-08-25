@@ -2,7 +2,7 @@ import { IEducation } from "./types";
 
 export const education: Array<IEducation> = [
   {
-    title: "National Polytechnic University of Armenia, Yerevan",
+    title: "National Polytechnic University of Armenia",
     start: new Date("2020-09-01"),
     end: new Date("2022-06-01"),
     link: "https://polytechnic.am/",
@@ -11,8 +11,8 @@ export const education: Array<IEducation> = [
     location: "Yerevan",
   },
   {
-    title: "Synopsys Armenia Educational Department, Yerevan",
-    start: new Date("2024-05-01"),
+    title: "Synopsys Armenia Educational Department",
+    start: new Date("2024-09-01"),
     end: new Date("2024-06-01"),
     link: "https://www.synopsys.com/armenia.html",
     logo: "/images/synopsys.jpg",

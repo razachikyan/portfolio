@@ -13,10 +13,15 @@ export const Experience = (): JSX.Element => {
         <SectionTitle>Experience</SectionTitle>
         <div className={styles.box}>
           {experiences.map(
-            ({ company, end, location, start, summary, logo }: IExperience) => {
+            ({ company, end, location, start, summary, logo, link }: IExperience) => {
               return (
                 <div className={styles.item}>
-                  <a href="" className={styles.main}>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.main}
+                  >
                     <Image
                       size={50}
                       className={styles.logo}

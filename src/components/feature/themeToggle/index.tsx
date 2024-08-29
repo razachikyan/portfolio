@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTheme } from "../../../contexts/ThemeContext";
 
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
@@ -14,7 +14,7 @@ export const ThemeToggle = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "theme-light";
     setTheme(savedTheme);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

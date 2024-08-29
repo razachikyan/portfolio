@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 import { IMainProps } from "./types";
 
 export const Main = ({ children }: IMainProps): JSX.Element => {

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { IButtonProps } from "./types";
 
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 
 export const Button = ({
   onClick,

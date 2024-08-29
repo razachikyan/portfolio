@@ -6,7 +6,7 @@ import { repositories, social } from "./mock";
 import classNames from "classnames";
 import { TypeAnimation } from "react-type-animation";
 
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 import { SectionTitle } from "../../sectionTitle";
 
 export const About = (): JSX.Element => {

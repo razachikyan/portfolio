@@ -4,7 +4,7 @@ import { GenericListProps } from "./types";
 import { formatDate } from "./utils";
 import { Box } from "../box";
 
-import styles from './styles.module.css'
+import styles from './styles.css'
 
 export const GenericList = <T extends IEntry>({
   items,

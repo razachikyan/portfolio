@@ -1,7 +1,7 @@
 import { useTheme } from "../../../contexts/ThemeContext";
 import { Image } from "../../shared/image";
 
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 
 export const Logo = (): JSX.Element => {
   const { theme } = useTheme();

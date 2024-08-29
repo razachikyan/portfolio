@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { APIProvider } from "@vis.gl/react-google-maps";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { HomePage } from "./pages/homepage/page";
@@ -35,10 +36,13 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
+    {/* <APIProvider apiKey={String(process.env.REACT_APP_API_KEY)}> */}
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
+    {/* </APIProvider> */}
   </React.StrictMode>
 );

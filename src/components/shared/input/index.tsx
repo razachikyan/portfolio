@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 import { IInputProps } from "./types";
 
 export const Input = ({

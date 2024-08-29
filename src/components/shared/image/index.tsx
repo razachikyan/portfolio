@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { IImageProps } from "./types";
 
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 
 export const Image = ({
   src,
@@ -9,11 +9,7 @@ export const Image = ({
   size,
   className = "",
 }: IImageProps): JSX.Element => {
-  const width = size
-    ? typeof size === "number"
-      ? size
-      : size.width
-    : "100%";
+  const width = size ? (typeof size === "number" ? size : size.width) : "100%";
   const height = size
     ? typeof size === "number"
       ? size

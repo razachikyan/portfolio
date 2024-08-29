@@ -1,5 +1,5 @@
 import { Container } from "../../../../components/container";
-import styles from "./styles.module.css";
+import styles from "./styles.css";
 import { SectionTitle } from "../../sectionTitle";
 import { Box } from "../../box";
 import { GenericList } from "../../gelericList";
@@ -11,7 +11,7 @@ export const Education = () => {
       <Container>
         <SectionTitle>Education</SectionTitle>
         <Box className={styles.box}>
-            <GenericList items={education} />
+          <GenericList items={education} />
         </Box>
       </Container>
     </section>

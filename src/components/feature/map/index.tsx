@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const CustomMap = () => {
   // shows marker on London by default
-  const [markerLocation, _] = useState({
+  const [markerLocation] = useState({
     lat: 51.509865,
     lng: -0.118092,
   });

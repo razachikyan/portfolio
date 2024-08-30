@@ -56,17 +56,22 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
+        exclude: /\.module\.css$/,
+        use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.module\.css$/,
         use: [
           isDev ? "style-loader" : MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                mode: "local",
+                localIdentName: "[name]_[local]--[hash:base64:5]",
+              },
+            },
+          },
         ],
       },
       {
@@ -83,7 +88,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
-      favicon:'./public/favicon.ico',
+      favicon: "./public/favicon.ico",
       minify: {
         collapseWhitespace: isProd,
       },
@@ -98,7 +103,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
     port: 3000,

@@ -55,19 +55,29 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        type: "asset/resource",
+      },
+      {
         test: /\.css$/,
         exclude: /\.module\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.module\.css$/,
+        test: /\.module\.css$/i,
         use: [
-          isDev ? "style-loader" : MiniCssExtractPlugin.loader,
+          {
+            loader: isDev ? MiniCssExtractPlugin.loader : 'style-loader',
+          },
           {
             loader: "css-loader",
             options: {
               modules: {
-                mode: "local",
+                mode: 'local',
                 localIdentName: "[name]_[local]--[hash:base64:5]",
               },
             },
@@ -75,12 +85,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|svg|gif)$/,
-        type: "asset/resource",
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)$/,
-        type: "asset/resource",
+        test: /\.ts$/,
+        use: "ts-loader",
       },
     ],
   },
@@ -93,12 +99,10 @@ module.exports = {
         collapseWhitespace: isProd,
       },
     }),
-
     new MiniCssExtractPlugin({
       filename: isDev ? "[name].css" : "[name].[contenthash].css",
       chunkFilename: isDev ? "[id].css" : "[id].[contenthash].css",
     }),
-
     new CssMinimizerPlugin(),
   ],
   devServer: {

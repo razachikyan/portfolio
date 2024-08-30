@@ -5,9 +5,9 @@ import { Image } from "../../../../components/shared/image";
 import { repositories, social } from "./mock";
 import classNames from "classnames";
 import { TypeAnimation } from "react-type-animation";
+import { SectionTitle } from "../../sectionTitle";
 
 import styles from "./styles.module.css";
-import { SectionTitle } from "../../sectionTitle";
 
 export const About = (): JSX.Element => {
   return (

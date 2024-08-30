@@ -1,9 +1,10 @@
 import { Container } from "../../../../components/container";
-import styles from "./styles.module.css";
 import { SectionTitle } from "../../sectionTitle";
 import { Box } from "../../box";
 import { GenericList } from "../../gelericList";
 import { education } from "./mock";
+
+import styles from "./styles.module.css";
 
 export const Education = () => {
   return (

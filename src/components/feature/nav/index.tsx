@@ -1,7 +1,8 @@
 import classNames from "classnames";
 import { INavProps } from "./types";
 
-import styles from "./styles.css";
+import "./styles.module.css";
+import styles from "./styles.module.css";
 
 export const Nav = ({
   items,

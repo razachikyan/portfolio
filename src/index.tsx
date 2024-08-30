@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { APIProvider } from "@vis.gl/react-google-maps";
+// import { APIProvider } from "@vis.gl/react-google-maps";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { HomePage } from "./pages/homepage/page";
@@ -8,10 +8,6 @@ import { ResumePage } from "./pages/resume/page";
 import { ContactsPage } from "./pages/contacts/page";
 import { PortfolioPage } from "./pages/portfolio/page";
 
-import "normalize.css";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import "./styles/fonts.css";
 import "./styles/global.css";
 
 const router = createBrowserRouter([

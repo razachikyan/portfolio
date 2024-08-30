@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTheme } from "../../../contexts/ThemeContext";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();

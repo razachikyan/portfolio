@@ -1,6 +1,8 @@
-export const ResumePage = (): JSX.Element => {
+import { pageProps } from "../pageProps";
+
+export const ResumePage = ({ className }: pageProps): JSX.Element => {
   return (
-    <div>
+    <div className={className}>
       <h1>Resume Page</h1>
     </div>
   );

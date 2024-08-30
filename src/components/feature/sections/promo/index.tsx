@@ -3,7 +3,7 @@ import { Container } from "../../../../components/container";
 import { Image } from "../../../../components/shared/image";
 import { TypeAnimation } from "react-type-animation";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export const Promo = (): JSX.Element => {
   return (

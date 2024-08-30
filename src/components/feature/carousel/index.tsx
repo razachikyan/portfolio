@@ -2,7 +2,7 @@ import { ICarouselProps } from "./types";
 import { SectionTitle } from "../sectionTitle";
 import { Image } from "../../../components/shared/image";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export const Carousel = ({ skills }: ICarouselProps) => {
   return (

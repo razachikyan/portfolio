@@ -7,10 +7,11 @@ import { Main } from "../../components/main";
 import { Education } from "../../components/feature/sections/education";
 import { Carousel } from "../../components/feature/carousel";
 import { skillsData } from "./mock";
+import { pageProps } from "../pageProps";
 
-export const HomePage = (): JSX.Element => {
+export const HomePage = ({ className }: pageProps): JSX.Element => {
   return (
-    <>
+    <div className={className}>
       <Header />
       <Main>
         <Promo />
@@ -20,6 +21,6 @@ export const HomePage = (): JSX.Element => {
         <Education />
       </Main>
       <Footer />
-    </>
+    </div>
   );
 };

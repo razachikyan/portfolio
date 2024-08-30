@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { Image } from "../image";
 import { IModalProps } from "./types";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export const Modal = ({
   open,

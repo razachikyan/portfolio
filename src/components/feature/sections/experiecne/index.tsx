@@ -3,7 +3,7 @@ import { experiences } from "./mock";
 import { SectionTitle } from "../../sectionTitle";
 import { GenericList } from "../../gelericList";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export const Experience = (): JSX.Element => {
   return (

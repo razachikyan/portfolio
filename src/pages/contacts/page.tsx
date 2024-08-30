@@ -1,10 +1,11 @@
 import { Main } from "../../components/main";
 import { Header } from "../../components/header";
 import CustomMap from "../../components/feature/map";
+import { pageProps } from "../pageProps";
 
-export const ContactsPage = (): JSX.Element => {
+export const ContactsPage = ({ className }: pageProps): JSX.Element => {
   return (
-    <>
+    <div className={className}>
       <Header />
       <Main>
         <div
@@ -17,6 +18,6 @@ export const ContactsPage = (): JSX.Element => {
         ></div>
         <CustomMap />
       </Main>
-    </>
+    </div>
   );
 };

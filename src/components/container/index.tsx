@@ -1,6 +1,6 @@
 import { IContainerProps } from "./types";
 
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 import classNames from "classnames";
 
 export const Container = ({

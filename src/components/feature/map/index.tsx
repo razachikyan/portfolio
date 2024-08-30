@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Map, Marker} from "@vis.gl/react-google-maps";
+import { Map, Marker } from "@vis.gl/react-google-maps";
 
-import styles from './styles.css'
+import styles from "./styles.module.css";
 
 const CustomMap = () => {
   // shows marker on London by default
@@ -23,6 +23,6 @@ const CustomMap = () => {
       </Map>
     </div>
   );
-}
+};
 
 export default CustomMap;

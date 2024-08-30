@@ -70,14 +70,20 @@ module.exports = {
       {
         test: /\.module\.css$/i,
         use: [
-          {
-            loader: isDev ? MiniCssExtractPlugin.loader : 'style-loader',
-          },
+          isDev
+            ? "style-loader"
+            : {
+                loader: MiniCssExtractPlugin.loader,
+                options: {
+                  hmr: isDev,
+                  reloadAll: true,
+                },
+              },
           {
             loader: "css-loader",
             options: {
               modules: {
-                mode: 'local',
+                mode: "local",
                 localIdentName: "[name]_[local]--[hash:base64:5]",
               },
             },

@@ -30,7 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"No test specified\" && exit 0",
     "eject": "echo \"Ejecting is not available in custom setups\" && exit 1"

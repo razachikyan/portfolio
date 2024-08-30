@@ -21,7 +21,7 @@ const optimization = () => {
 };
 
 module.exports = {
-  mode: "development",
+  mode: process.env.NODE_ENV,
   entry: {
     entry: "./src/index.tsx",
   },
@@ -34,8 +34,8 @@ module.exports = {
   resolve: {
     extensions: [".js", ".json", ".png", ".ts", ".tsx", ".jsx"],
     alias: {
-      "@components": path.resolve(__dirname, "src/components"),
-      "@pages": path.resolve(__dirname, "src/pages"),
+      "@": path.resolve(__dirname, "src"),
+      "@public": path.resolve(__dirname, "public"),
     },
   },
   module: {
@@ -70,14 +70,10 @@ module.exports = {
       {
         test: /\.module\.css$/i,
         use: [
-          isDev
+          isProd
             ? "style-loader"
             : {
                 loader: MiniCssExtractPlugin.loader,
-                options: {
-                  hmr: isDev,
-                  reloadAll: true,
-                },
               },
           {
             loader: "css-loader",
@@ -114,7 +110,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "public"),
     },
     compress: true,
     port: 3000,

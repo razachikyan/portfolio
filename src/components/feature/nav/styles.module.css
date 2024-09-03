@@ -42,3 +42,15 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .container {
+    .list {
+      width: 250px;
+
+      .toggle {
+        right: 180px;
+      }
+    }
+  }
+}

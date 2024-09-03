@@ -97,7 +97,8 @@
     font-size: 18px;
   }
 
-  .date, .location {
+  .date,
+  .location {
     font-size: 15px;
   }
 
@@ -120,7 +121,8 @@
     height: initial;
   }
 
-  .item::after, .item::before {
+  .item::after,
+  .item::before {
     opacity: 0;
   }
 
@@ -128,7 +130,15 @@
     font-size: 12px;
   }
 
-  .date, .location {
+  .date,
+  .location {
     font-size: 13px;
+  }
 }
+
+@media (max-width: 375px) {
+  .box {
+    padding: 0;
+    background-color: transparent;
+  }
 }

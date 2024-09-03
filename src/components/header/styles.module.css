@@ -29,3 +29,9 @@
   color: var(--gray__400);
   cursor: pointer;
 }
+
+@media (max-width: 375px) {
+  .header {
+    padding-top: 20px;
+  }
+}

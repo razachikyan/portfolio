@@ -8,13 +8,14 @@ import { useMediaQuery } from "react-responsive";
 
 export const Promo = (): JSX.Element => {
   const isMobile = useMediaQuery({maxWidth: 680})
+  const isSmall = useMediaQuery({maxWidth: 375})
 
   return (
     <section className={styles.promo}>
       <Container className={styles.container}>
         <div className={styles.box}>
           <Image
-            size={isMobile ? 300 : 400}
+            size={isSmall ? 250 : isMobile ? 300 : 400}
             src="/images/Razmik.jpg"
             alt="ava"
             className={styles.avatar}

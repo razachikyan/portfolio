@@ -12,6 +12,7 @@ import { useMediaQuery } from "react-responsive";
 
 export const About = (): JSX.Element => {
   const isTab = useMediaQuery({ maxWidth: 1200 });
+  const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
     <section className={styles.about}>
@@ -25,13 +26,28 @@ export const About = (): JSX.Element => {
           modules={[Mousewheel, Pagination]}
           pagination
         >
-          <SwiperSlide>
+          {/* <SwiperSlide>
+            <TypeAnimation
+              sequence={[
+                `Frontend developer experiences in creating user-friendly and
+              responsive web applications. Specialized in front-end development
+              while also contributing to back-end and mobile development.
+              Ability to adapt to unfamiliar technologies and tools,
+              demonstrating flexibility in solving a variety of problems.`,
+              ]}
+              wrapper="p"
+              cursor={true}
+              speed={50}
+              className={styles.descr}
+            />
+          </SwiperSlide> */}
+          {/* <SwiperSlide>
             <div className={styles.slideBox}>
               <a className={styles.git} href="https://github.com/razachikyan">
                 <Image
                   src="/icons/github.svg"
                   alt="github"
-                  size={isTab ? 100 : 180}
+                  size={isMobile ? 150 : isTab ? 100 : 180}
                   className={styles.github}
                 />
                 <span className={styles.me}>@razachikyan</span>
@@ -68,22 +84,7 @@ export const About = (): JSX.Element => {
                 </ul>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <TypeAnimation
-              sequence={[
-                `Frontend developer experiences in creating user-friendly and
-              responsive web applications. Specialized in front-end development
-              while also contributing to back-end and mobile development.
-              Ability to adapt to unfamiliar technologies and tools,
-              demonstrating flexibility in solving a variety of problems.`,
-              ]}
-              wrapper="p"
-              cursor={true}
-              speed={50}
-              className={styles.descr}
-            />
-          </SwiperSlide>
+          </SwiperSlide> */}
           <SwiperSlide>
             <ul className={styles.socialList}>
               {social.map(({ url, name, image }, i) => (
@@ -91,7 +92,7 @@ export const About = (): JSX.Element => {
                   <a href={url}>
                     <Image
                       className={styles.repo}
-                      size={isTab ? 100 : 180}
+                      size={isMobile ? 50 : isTab ? 100 : 180}
                       src={image}
                       alt={name}
                     />

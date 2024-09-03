@@ -93,3 +93,9 @@ html {
   --background-color: #ffffff;
   --swiper-theme-color: #007ced;
 }
+
+@media (max-width: 1200px) {
+  .swiper {
+    width: 100%;
+  }
+}

@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 export const Experience = (): JSX.Element => {
   return (
     <section className={styles.experience}>
-      <Container>
+      <Container className={styles.container}>
         <SectionTitle>Experience</SectionTitle>
         <GenericList items={experiences} />
       </Container>

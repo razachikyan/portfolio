@@ -98,3 +98,17 @@
   border-color: var(--gray__700);
   color: var(--gray__750);
 }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 80px 50px;
+  }
+
+  .box {
+    flex-direction: column;
+
+    .descr {
+      width: initial;
+    }
+  }
+}

@@ -8,7 +8,7 @@ import { education } from "./mock";
 export const Education = () => {
   return (
     <section className={styles.education}>
-      <Container>
+      <Container className={styles.container}>
         <SectionTitle>Education</SectionTitle>
         <Box className={styles.box}>
             <GenericList items={education} />

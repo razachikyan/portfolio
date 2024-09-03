@@ -1,4 +1,44 @@
 .list {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .btn {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    .list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--outline);
+      gap: 20px;
+      justify-content: flex-start;
+      width: 300px;
+      z-index: 100;
+      padding: 40px;
+      padding-top: 60px;
+
+      .close {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+
+      .toggle {
+        position: fixed;
+        top: 15px;
+        right: 230px;
+      }
+    }
+  }
 }

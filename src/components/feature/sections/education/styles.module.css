@@ -1,3 +1,9 @@
 .education {
-    padding-bottom: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 80px 50px;
+  }
 }

@@ -5,11 +5,14 @@ import { Image } from "../../../../components/shared/image";
 import { repositories, social } from "./mock";
 import classNames from "classnames";
 import { TypeAnimation } from "react-type-animation";
-
-import styles from "./styles.module.css";
 import { SectionTitle } from "../../sectionTitle";
 
+import styles from "./styles.module.css";
+import { useMediaQuery } from "react-responsive";
+
 export const About = (): JSX.Element => {
+  const isTab = useMediaQuery({ maxWidth: 1200 });
+
   return (
     <section className={styles.about}>
       <Container className={styles.container}>
@@ -22,6 +25,50 @@ export const About = (): JSX.Element => {
           modules={[Mousewheel, Pagination]}
           pagination
         >
+          <SwiperSlide>
+            <div className={styles.slideBox}>
+              <a className={styles.git} href="https://github.com/razachikyan">
+                <Image
+                  src="/icons/github.svg"
+                  alt="github"
+                  size={isTab ? 100 : 180}
+                  className={styles.github}
+                />
+                <span className={styles.me}>@razachikyan</span>
+              </a>
+              <div className={styles.repos}>
+                <ul className={styles.repoList}>
+                  {repositories.map(({ url, name, image }, i) => (
+                    <li key={i} className={styles.repoItem}>
+                      <a rel="noreferrer" target="_blank" href={url}>
+                        <Image
+                          size={isTab ? 80 : 120}
+                          src={image}
+                          alt={name}
+                          className={styles.repo}
+                        />
+                      </a>
+                      <span className={styles.repoName}>{name}</span>
+                    </li>
+                  ))}
+                  <li className={classNames(styles.repoItem, styles.lastItem)}>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://github.com/razachikyan?tab=repositories"
+                    >
+                      <Image
+                        size={isTab ? 80 : 120}
+                        src="/icons/see-more.svg"
+                        alt="see more"
+                        className={styles.repo}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <TypeAnimation
               sequence={[
@@ -39,65 +86,20 @@ export const About = (): JSX.Element => {
           </SwiperSlide>
           <SwiperSlide>
             <ul className={styles.socialList}>
-              {social.map(({ url, name, image }) => (
-                <li className={styles.socialItem}>
+              {social.map(({ url, name, image }, i) => (
+                <li key={i} className={styles.socialItem}>
                   <a href={url}>
                     <Image
-                      size={180}
+                      className={styles.repo}
+                      size={isTab ? 100 : 180}
                       src={image}
                       alt={name}
-                      className={styles.repo}
                     />
                   </a>
                   <span className={styles.socialName}>{name}</span>
                 </li>
               ))}
             </ul>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className={styles.slideBox}>
-              <a className={styles.git} href="https://github.com/razachikyan">
-                <Image
-                  src="/icons/github.svg"
-                  alt="github"
-                  size={180}
-                  className={styles.github}
-                />
-                <span className={styles.me}>@razachikyan</span>
-              </a>
-              <div className={styles.repos}>
-                <ul className={styles.repoList}>
-                  {repositories.map(({ url, name, image }) => (
-                    <li className={styles.repoItem}>
-                      <a rel="noreferrer" target="_blank" href={url}>
-                        <Image
-                          size={120}
-                          src={image}
-                          alt={name}
-                          className={styles.repo}
-                        />
-                      </a>
-                      <span className={styles.repoName}>{name}</span>
-                    </li>
-                  ))}
-                  <li className={classNames(styles.repoItem, styles.lastItem)}>
-                    <a
-                      rel="noreferrer"
-                      target="_blank"
-                      href="https://github.com/razachikyan?tab=repositories"
-                    >
-                      <Image
-                        size={120}
-                        src="/icons/see-more.svg"
-                        alt="see more"
-                        className={styles.repo}
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </SwiperSlide>
         </Swiper>
       </Container>

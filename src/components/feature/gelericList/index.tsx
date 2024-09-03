@@ -4,7 +4,7 @@ import { GenericListProps } from "./types";
 import { formatDate } from "./utils";
 import { Box } from "../box";
 
-import styles from './styles.module.css'
+import styles from "./styles.module.css";
 
 export const GenericList = <T extends IEntry>({
   items,
@@ -12,17 +12,9 @@ export const GenericList = <T extends IEntry>({
   return (
     <Box className={styles.box}>
       {items.map(
-        ({
-          title,
-          end,
-          location,
-          start,
-          summary,
-          logo,
-          link,
-        }: T) => {
+        ({ title, end, location, start, summary, logo, link }: T, i) => {
           return (
-            <div className={styles.item}>
+            <div key={i} className={styles.item}>
               <a
                 href={link}
                 target="_blank"

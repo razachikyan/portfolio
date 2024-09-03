@@ -137,3 +137,46 @@
     background-color: rgba(255, 255, 255, .5);
   }
 }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 80px 50px;
+  }
+
+  .descr {
+    font-size: 18px;
+  }
+
+  .socialList {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .socialName {
+    display: none;
+  }
+
+  .slideBox {
+    margin: 0 20px;
+  }
+
+  .repoName {
+    display: none;
+  }
+
+  .repoList {
+    flex-wrap: wrap;
+  }
+
+  .repoItem {
+    background-color: transparent;
+    outline: 0;
+    height: initial;
+
+    &::after, &::before {
+      background-color: transparent;
+      width: 0;
+      height: 0;
+    }
+  }
+}

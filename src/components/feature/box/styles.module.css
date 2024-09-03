@@ -1,5 +1,11 @@
 .box {
-    background-color: var(--outline);
-    border-radius: 40px;
-    padding: 40px;
+  background-color: var(--outline);
+  border-radius: 40px;
+  padding: 40px;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    padding-right: 20px;
+  }
 }

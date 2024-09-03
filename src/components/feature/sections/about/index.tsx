@@ -26,7 +26,7 @@ export const About = (): JSX.Element => {
           modules={[Mousewheel, Pagination]}
           pagination
         >
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <TypeAnimation
               sequence={[
                 `Frontend developer experiences in creating user-friendly and
@@ -40,8 +40,8 @@ export const About = (): JSX.Element => {
               speed={50}
               className={styles.descr}
             />
-          </SwiperSlide> */}
-          {/* <SwiperSlide>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className={styles.slideBox}>
               <a className={styles.git} href="https://github.com/razachikyan">
                 <Image
@@ -84,7 +84,7 @@ export const About = (): JSX.Element => {
                 </ul>
               </div>
             </div>
-          </SwiperSlide> */}
+          </SwiperSlide>
           <SwiperSlide>
             <ul className={styles.socialList}>
               {social.map(({ url, name, image }, i) => (

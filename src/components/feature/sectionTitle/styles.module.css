@@ -7,3 +7,9 @@
     color: var(--gray__500);
     margin-bottom: 20px;
 }
+
+@media (max-width: 680px) {
+    .title {
+        font-size: 30px;
+    }
+}

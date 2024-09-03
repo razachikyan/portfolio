@@ -100,6 +100,10 @@
 }
 
 @media (max-width: 1200px) {
+  .promo {
+    padding-bottom: 0;
+  }
+
   .container {
     padding: 80px 50px;
   }
@@ -110,5 +114,19 @@
     .descr {
       width: initial;
     }
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 80px 20px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .descr {
+    font-size: 15px;
   }
 }

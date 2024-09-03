@@ -7,3 +7,9 @@
     padding: 80px 50px;
   }
 }
+
+@media (max-width: 680px) {
+  .container {
+    padding: 80px 20px;
+  }
+}

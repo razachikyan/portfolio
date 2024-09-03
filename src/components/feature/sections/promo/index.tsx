@@ -4,14 +4,17 @@ import { Image } from "../../../../components/shared/image";
 import { TypeAnimation } from "react-type-animation";
 
 import styles from "./styles.module.css";
+import { useMediaQuery } from "react-responsive";
 
 export const Promo = (): JSX.Element => {
+  const isMobile = useMediaQuery({maxWidth: 680})
+
   return (
     <section className={styles.promo}>
       <Container className={styles.container}>
         <div className={styles.box}>
           <Image
-            size={400}
+            size={isMobile ? 300 : 400}
             src="/images/Razmik.jpg"
             alt="ava"
             className={styles.avatar}

@@ -180,3 +180,40 @@
     }
   }
 }
+
+@media (max-width: 680px) {
+  .container {
+    padding: 80px 20px;
+  }
+
+  .slideBox {
+    gap: 40px;
+  }
+  .descr {
+    font-size: 14px;
+  }
+
+  .repos {
+    justify-content: center;
+  }
+
+  .repoList {
+    gap: 20px;
+    row-gap: 40px;
+    height: initial;
+  }
+
+  .repoItem {
+    width: 60px;
+    height: 60px;
+  }
+
+  .git {
+    width: 80px;
+    height: 80px;
+  }
+
+  .me {
+    font-size: 14px;
+  }
+}

@@ -105,3 +105,30 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 680px) {
+  .box {
+    padding: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .item {
+    max-width: 100%;
+    height: initial;
+  }
+
+  .item::after, .item::before {
+    opacity: 0;
+  }
+
+  .descr {
+    font-size: 12px;
+  }
+
+  .date, .location {
+    font-size: 13px;
+}
+}

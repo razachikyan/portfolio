@@ -1,14 +1,17 @@
-import { Image } from "../../../components/shared/image";
+import { Image } from "../../shared/image";
 import { IEntry } from "../../../types/shared";
 import { GenericListProps } from "./types";
 import { formatDate } from "./utils";
 import { Box } from "../box";
 
 import styles from "./styles.module.css";
+import { useMediaQuery } from "react-responsive";
 
 export const GenericList = <T extends IEntry>({
   items,
 }: GenericListProps<T>) => {
+  const isMobile = useMediaQuery({maxWidth: 680})
+
   return (
     <Box className={styles.box}>
       {items.map(
@@ -22,7 +25,7 @@ export const GenericList = <T extends IEntry>({
                 className={styles.main}
               >
                 <Image
-                  size={50}
+                  size={isMobile ? 150 : 50}
                   className={styles.logo}
                   src={logo}
                   alt={title}

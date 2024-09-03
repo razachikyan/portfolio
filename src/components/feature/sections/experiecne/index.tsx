@@ -1,7 +1,7 @@
 import { Container } from "../../../../components/container";
 import { experiences } from "./mock";
 import { SectionTitle } from "../../sectionTitle";
-import { GenericList } from "../../gelericList";
+import { GenericList } from "../../genericList";
 
 import styles from "./styles.module.css";
 

@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .about {
     padding-bottom: 0;
   }

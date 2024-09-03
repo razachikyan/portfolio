@@ -136,7 +136,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .box {
     padding: 0;
     background-color: transparent;

@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .header {
     padding-top: 20px;
   }

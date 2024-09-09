@@ -1,0 +1,23 @@
+.footer {
+    border-top: 1px solid #222222;
+    padding: 10px;
+    background-color: var(--outline);
+}
+
+.container, .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item > a  {
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+
+.rights {
+    color: #222222;
+}

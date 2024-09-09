@@ -1,0 +1,42 @@
+.mailMe {
+    width: calc((100% - 40px)/2);
+}
+
+.title {
+    font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 120%;
+  color: var(--gray__500);
+}
+
+.top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.from, .input {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    &, &:focus, &:active {
+        border: none;
+        outline: none;
+    }
+}
+
+.input {
+    min-height: 300px;
+}

@@ -1,0 +1,43 @@
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.social, .mailMe {
+    width: calc((100% - 40px)/2);
+}
+
+.social {
+    padding: 40px;
+    max-height: 320px;
+    border-radius: 40px;
+    background-color: var(--background-color-light);
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: calc((100% - 40px) /2);
+    padding: 20px;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #ffffff;
+    }
+}

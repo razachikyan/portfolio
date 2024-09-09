@@ -1,1 +1,1 @@
-export interface IFooterProps {}
+export type TSocial = { name: string; link: string }[];

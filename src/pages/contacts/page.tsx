@@ -1,7 +1,13 @@
+import { Footer } from "../../components/footer";
+import { Contacts } from "../../components/feature/sections/contacts";
+import { Header } from "../../components/header";
+
 export const ContactsPage = (): JSX.Element => {
   return (
-    <div>
-      <h1>Contacts Page</h1>
-    </div>
+    <>
+      <Header />
+      <Contacts />
+      <Footer />
+    </>
   );
 };

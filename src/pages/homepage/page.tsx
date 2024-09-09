@@ -1,6 +1,6 @@
 import { About } from "../../components/feature/sections/about";
 import { Promo } from "../../components/feature/sections/promo";
-import { Experience } from "../../components/feature/sections/experiecne";
+import { Experience } from "../../components/feature/sections/experience";
 import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
 import { Main } from "../../components/main";

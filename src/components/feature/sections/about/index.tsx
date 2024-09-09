@@ -15,7 +15,7 @@ export const About = (): JSX.Element => {
   const isMobile = useMediaQuery({ maxWidth: 375 });
 
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <Container className={styles.container}>
         <SectionTitle>About</SectionTitle>
         <Swiper

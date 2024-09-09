@@ -17,7 +17,14 @@ export const Header = (): JSX.Element => {
           <Nav
             className={styles.nav}
             itemClassName={styles.item}
-            items={["About me", "Resume", "Portfolio", "Contact"]}
+            items={[
+              { name: "About me", link: "/#about" },
+              { name: "Experience", link: "/#experience" },
+              { name: "Education", link: "/#education" },
+              { name: "Resume", link: "resume" },
+              { name: "Contact", link: "/contacts" },
+              { name: "Portfolio", link: "/" },
+            ]}
             direction={isTab ? "column" : "row"}
           />
           {!isTab && <ThemeToggle />}

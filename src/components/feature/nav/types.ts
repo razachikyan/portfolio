@@ -1,5 +1,5 @@
 export interface INavProps {
-  items: string[];
+  items: { name: string; link: string }[];
   className?: string;
   itemClassName?: string;
   direction?: "row" | "row-reverse" | "column" | "column-reverse";

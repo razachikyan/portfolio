@@ -38,9 +38,9 @@ export const Nav = ({
               </li>
             </>
           )}
-          {items.map((item, i) => (
+          {items.map(({name, link}, i) => (
             <li className={classNames(styles.item, itemClassName)} key={i}>
-              {item}
+              <a href={link}>{name}</a>
             </li>
           ))}
         </ul>

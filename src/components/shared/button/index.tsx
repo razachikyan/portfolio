@@ -8,11 +8,13 @@ export const Button = ({
   className = "",
   children,
   CSS = {},
+  type = "button",
 }: IButtonProps): JSX.Element => {
   return (
     <button
       style={CSS}
       onClick={onClick}
+      type={type}
       className={classNames(styles.Button, className)}
     >
       {children}

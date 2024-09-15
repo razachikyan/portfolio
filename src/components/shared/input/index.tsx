@@ -10,12 +10,16 @@ export const Input = ({
   className = "",
   disabled = false,
   placeholder = "",
+  name = "",
+  required = false,
 }: IInputProps): JSX.Element => {
   return (
     <input
+      name={name}
       onChange={onChange}
       value={value}
       disabled={disabled}
+      required={required}
       className={classNames(styles.Input, className)}
       placeholder={placeholder}
     >

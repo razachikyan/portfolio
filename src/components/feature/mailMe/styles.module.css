@@ -1,4 +1,5 @@
 .mailMe {
+    position: relative;
     width: calc((100% - 40px)/2);
 }
 
@@ -39,4 +40,38 @@
 
 .input {
     min-height: 300px;
+}
+
+.button {
+  border-radius: 30px;
+  padding: 13px 31px;
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--outline);
+  background-color:#ffffff;
+}
+
+.cover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    font-size: 50px;
+    padding: 60px;
+    font-weight: 900;
+    color: #222;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s;
+}
+
+.active {
+    opacity: .8;
+    z-index: 100;
 }

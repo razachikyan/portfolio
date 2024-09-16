@@ -7,6 +7,7 @@ import { Image } from "../../shared/image";
 import { Box } from "../box";
 
 import styles from "./styles.module.css";
+import { useMediaQuery } from "react-responsive";
 
 export const MailMe = () => {
   const [showMessage, setShowMessage] = useState<boolean>(false);
@@ -14,6 +15,7 @@ export const MailMe = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
+  const isMobile = useMediaQuery({ maxWidth: 450 });
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,12 +50,12 @@ export const MailMe = () => {
         Thanks for reaching out! I will be in touch soon.
       </div>
       <div className={styles.top}>
-        <Image src="/icons/gmail.svg" size={60} alt="gmail" />
+        <Image src="/icons/gmail.svg" size={isMobile? 40 : 60} alt="gmail" />
         <h3 className={styles.title}>Mail me</h3>
       </div>
       <form ref={formRef} onSubmit={sendEmail} className={styles.inputs}>
         <Input
-          className={styles.from}
+          className={styles.input}
           placeholder="Your full name"
           name="user_name"
           value={name}
@@ -61,7 +63,7 @@ export const MailMe = () => {
           required
         />
         <Input
-          className={styles.from}
+          className={styles.input}
           placeholder="Your email address"
           name="user_email"
           value={email}
@@ -69,7 +71,7 @@ export const MailMe = () => {
           required
         />
         <Input
-          className={styles.input}
+          className={styles.textarea}
           placeholder="Message"
           name="message"
           value={message}

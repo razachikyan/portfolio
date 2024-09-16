@@ -12,7 +12,7 @@ import { useMediaQuery } from "react-responsive";
 
 export const About = (): JSX.Element => {
   const isTab = useMediaQuery({ maxWidth: 1200 });
-  const isMobile = useMediaQuery({ maxWidth: 375 });
+  const isMobile = useMediaQuery({ maxWidth: 450 });
 
   return (
     <section id="about" className={styles.about}>

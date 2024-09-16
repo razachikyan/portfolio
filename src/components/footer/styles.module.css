@@ -21,3 +21,17 @@
 .rights {
     color: #222222;
 }
+
+@media (max-width: 450px) {
+    .list {
+        gap: 10px;
+    }
+
+    .item > a {
+        font-size: 10px;
+    }
+
+    .rights {
+        font-size: 10px;
+    }
+}

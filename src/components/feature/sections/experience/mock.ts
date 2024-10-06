@@ -29,10 +29,10 @@ independently`,
   {
     title: "Megafon",
     start: new Date(2022, 4),
-    end: new Date(2022, 11),
+    end: new Date(2022, 8),
     location: "Yerevan (Remote)",
     summary:
-      "As a Full Stack Developer, I specialize in building web applications using TypeScript, ReactJS, and Node.js. With a focus on creating responsive and scalable frontends using ReactJS, I also develop efficient backends with Node.js and ExpressJS.",
+      "As a Full Stack Developer, I specialize in building web applications using TypeScript, ReactJS, and Node.js.",
     logo: "/icons/megafon.svg",
     link: "https://moscow.megafon.ru/",
   },

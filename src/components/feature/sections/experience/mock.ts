@@ -4,10 +4,11 @@ export const experiences: IExperience[] = [
   {
     title: "Optimum Partners",
     start: new Date(2024, 5),
-    end: "Present",
+    end: new Date(2024, 9),
     location: "Yerevan",
-    summary:
-      "Leading the development of web applications with a focus on optimizing user experience and performance. Collaborating closely with cross-functional teams to deliver high-quality, scalable solutions. Independently tackling complex tasks and contributing to code reviews, ensuring best practices.",
+    summary: `Contributed to the development of a web application, 
+demonstrating proficiency in front-end development using 
+technologies like React, NextJS, pure JavaScript, and Pug.`,
     logo: "/images/op.jpg",
     link: "https://www.optimumpartners.com/",
   },
@@ -16,23 +17,29 @@ export const experiences: IExperience[] = [
     start: new Date(2023, 4),
     end: new Date(2024, 5),
     location: "Yerevan",
-    summary:
-      "Developed responsive web and mobile applications using modern frameworks and tools. Engaged in both collaborative and independent work, delivering key features and bug fixes. Assisted in the continuous improvement of codebase quality through refactoring and testing.",
+    summary: `Specialized in developing web applications with a focus on 
+ReactJS and NextJS. Utilized React Native and Expo for mobile 
+projects, and ExpressJS for backend development. Managed 
+databases using SQL, MongoDB, and PostgreSQL. Demonstrated 
+versatility by working both collaboratively in teams and 
+independently`,
     logo: "/images/solicy.jpg",
     link: "https://solicy.net/",
   },
   {
     title: "Megafon",
     start: new Date(2022, 4),
-    end: new Date(2022, 8),
+    end: new Date(2022, 11),
     location: "Yerevan (Remote)",
     summary:
-      "Collaborated on full-stack demo projects, gaining hands-on experience with frontend and backend technologies. Contributed to the design and implementation of core features, enhancing the overall functionality of demo applications. Worked remotely while maintaining strong communication with the team.",
+      "As a Full Stack Developer, I specialize in building web applications using TypeScript, ReactJS, and Node.js. With a focus on creating responsive and scalable frontends using ReactJS, I also develop efficient backends with Node.js and ExpressJS.",
     logo: "/icons/megafon.svg",
     link: "https://moscow.megafon.ru/",
   },
 ];
 
-export const formatDate = (date: Date | 'Present'): string => {
-  return date === 'Present' ? date : date.toDateString().split(" ").slice(1).join(" ");
+export const formatDate = (date: Date | "Present"): string => {
+  return date === "Present"
+    ? date
+    : date.toDateString().split(" ").slice(1).join(" ");
 };

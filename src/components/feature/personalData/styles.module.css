@@ -66,3 +66,29 @@
 .icon {
   margin-bottom: 6px;
 }
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  .general {
+    width: 100%;
+  }
+
+  .firstName {
+    font-size: 30px;
+  }
+
+  .lastName {
+    font-size: 65px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}

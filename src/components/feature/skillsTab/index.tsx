@@ -4,14 +4,15 @@ import { TabPanelProps } from "./types";
 import { skillsData } from "../../../pages/homepage/mock";
 
 import styles from "./styles.module.css";
+import { useMediaQuery } from "react-responsive";
 
 export const SkillsTab = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const labels = Object.keys(skillsData);
   const skillsArray = Object.values(skillsData);
-
+  const isMobile = useMediaQuery({ maxWidth: 540 });
   const handleChange = useCallback(
-    (event: React.SyntheticEvent, newValue: number) => {
+    (_: React.SyntheticEvent, newValue: number) => {
       setSelectedTab(newValue);
     },
     []
@@ -37,8 +38,8 @@ export const SkillsTab = () => {
                 <div key={i} className={styles.skill}>
                   {skill.name}
                   <img
-                    width={50}
-                    height={50}
+                    width={isMobile ? 30 : 50}
+                    height={isMobile ? 30 : 50}
                     src={skill.logo}
                     alt={skill.name}
                   />
@@ -62,7 +63,7 @@ const TabPanel = (props: TabPanelProps) => {
       aria-labelledby={`tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box className={styles.panel}>{children}</Box>}
     </div>
   );
 };

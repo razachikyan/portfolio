@@ -20,3 +20,22 @@
   font-weight: 600 !important;
   font-size: 18px !important;
 }
+
+.panel {
+  padding: 25px;
+}
+
+@media (max-width: 540px) {
+  .label {
+    font-size: 14px !important;
+  }
+
+  .skill {
+    font-size: 12px;
+  }
+
+  .panel {
+    padding: 0;
+    padding-block: 20px;
+  }
+}

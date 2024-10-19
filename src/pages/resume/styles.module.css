@@ -81,3 +81,55 @@
     border-radius: 50%;
   }
 }
+
+@media (max-width: 1200px) {
+  .main {
+    padding-inline: 20px;
+  }
+  .pair {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .text {
+    max-width: initial;
+  }
+
+  .education,
+  .experience {
+    width: initial;
+  }
+}
+
+@media (max-width: 750px) {
+  .company,
+  .university {
+    font-size: 18px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main {
+    padding-inline: 10px;
+  }
+
+  .label {
+    font-size: 24px;
+  }
+
+  .contacts {
+    .contact {
+      font-size: 17px;
+    }
+  }
+
+  .skills {
+    padding: 20px;
+    border-radius: 25px;
+  }
+}

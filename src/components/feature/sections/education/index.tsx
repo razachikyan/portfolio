@@ -1,4 +1,4 @@
-import { Container } from "../../../../components/container";
+import { Container } from "../../container";
 import styles from "./styles.module.css";
 import { SectionTitle } from "../../sectionTitle";
 import { GenericList } from "../../genericList";

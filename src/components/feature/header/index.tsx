@@ -1,8 +1,8 @@
-import { ThemeToggle } from "../feature/themeToggle";
 import { useMediaQuery } from "react-responsive";
+import { ThemeToggle } from "../themeToggle";
 import { Container } from "../container";
-import { Logo } from "../feature/Logo";
-import { Nav } from "../feature/nav";
+import { Logo } from "../Logo";
+import { Nav } from "../nav";
 
 import styles from "./styles.module.css";
 

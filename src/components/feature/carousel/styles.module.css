@@ -1,26 +1,26 @@
 .carousel {
-    margin: 100px 0;
-    width: 100%;
-    height: 200px;
-    border: 5px dashed var(--outline);
-    border-left: none;
-    border-right: none;
-    padding: 10px 0;
-    overflow: hidden;
-    position: relative;
+  margin: 100px 0;
+  width: 100%;
+  height: 200px;
+  border: 5px dashed var(--outline);
+  border-left: none;
+  border-right: none;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .list {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    gap: 50px;
-    animation: carousel 16s linear infinite;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 50px;
+  animation: carousel 35s linear infinite;
 }
 
 @keyframes carousel {
@@ -29,21 +29,21 @@
   }
 
   100% {
-    left: -350%;
+    left: -452%;
   }
 }
 
 .skill {
-    border: 4px solid var(--outline);
-    border-radius: 50px;
-    width: 260px;
-    height: 90px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    gap: 30px;
-    font-size: 20px;
-    font-weight: 600;
+  border: 4px solid var(--outline);
+  border-radius: 50px;
+  width: 260px;
+  height: 90px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 600;
 }

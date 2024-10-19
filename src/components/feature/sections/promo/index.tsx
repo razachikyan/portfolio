@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Container } from "../../../../components/container";
+import { Container } from "../../container";
 import { Image } from "../../../../components/shared/image";
 import { TypeAnimation } from "react-type-animation";
 

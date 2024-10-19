@@ -1,0 +1,83 @@
+.main {
+  padding-top: 100px;
+  font-family: sans-serif;
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: var(--gray__700);
+  }
+}
+
+.label {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  color: var(--gray__400);
+}
+
+.text {
+  color: var(--gray__700);
+  max-width: 750px;
+  font-size: 20px;
+}
+
+.skills {
+  background-color: rgba(255, 115, 0, 0.3);
+  padding: 50px;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.last {
+  align-items: flex-start;
+}
+
+.education,
+.experience {
+  width: calc(50% - 50px);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 20px;
+}
+
+.company,
+.university {
+  color: var(--gray__400);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: -30px;
+
+  img {
+    border-radius: 50%;
+  }
+}

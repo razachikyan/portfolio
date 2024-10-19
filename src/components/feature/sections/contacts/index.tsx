@@ -1,5 +1,5 @@
 import { Image } from "../../../shared/image";
-import { Container } from "../../../container";
+import { Container } from "../../container";
 import { Box } from "../../box";
 import { SectionTitle } from "../../sectionTitle";
 import { MailMe } from "../../mailMe";

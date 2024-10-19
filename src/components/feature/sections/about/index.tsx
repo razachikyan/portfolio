@@ -1,4 +1,4 @@
-import { Container } from "../../../../components/container";
+import { Container } from "../../container";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import { Image } from "../../../../components/shared/image";

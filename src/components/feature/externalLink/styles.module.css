@@ -1,0 +1,23 @@
+.ref {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--swiper-theme-color);
+
+    path {
+      fill: var(--swiper-theme-color);
+    }
+  }
+}
+
+.icon {
+  margin-bottom: 6px;
+  path {
+    fill: var(--gray__400);
+  }
+}

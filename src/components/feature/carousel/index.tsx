@@ -8,7 +8,7 @@ export const Carousel = ({ skills }: ICarouselProps) => {
   return (
     <div className={styles.carousel}>
       <SectionTitle className={styles.title}>Skills</SectionTitle>
-      <ul style={{ width: skills.length * 600 }} className={styles.list}>
+      <ul style={{ width: skills.length * 2 * 350 }} className={styles.list}>
         {[...skills, ...skills].map((skill, i) => (
           <div key={i} className={styles.skill}>
             <span>{skill.name}</span>

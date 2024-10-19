@@ -1,4 +1,4 @@
-import { Container } from "../../../container";
+import { Container } from "../../container";
 import { experiences } from "./mock";
 import { SectionTitle } from "../../sectionTitle";
 import { GenericList } from "../../genericList";

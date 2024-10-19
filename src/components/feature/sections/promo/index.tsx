@@ -37,7 +37,7 @@ export const Promo = (): JSX.Element => {
             <div className={styles.btnBox}>
               <a
                 className={classNames(styles.button, styles.cv)}
-                href={"/pdf/Razmik-Achikyan.pdf"}
+                href={"/pdf/Achikyan_CV.pdf"}
                 download
               >
                 Download CV
